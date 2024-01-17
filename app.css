@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(10,176,238);
+    background: linear-gradient(90deg, rgba(10,176,238,1) 0%, rgba(4,19,23,1) 75%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    border: 2px solid white;
+    margin-top: 7vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 25px black;
+    /* color: white; */
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+input{
+    margin: 0vw 1vw;
+    padding: 0.5vw;
+    border: none;
+    border-bottom: 1px solid rgb(32, 144, 188);
+    background-color: white;
+}
+input:focus{
+    outline: none;
+}
+.add{
+    padding: 0.5vw 0.8vw;
+    border-radius: 25px;
+    background-color: blueviolet;
+    color: white;
+}
+.task{
+    margin-top: 0.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    gap: 10vw;
+}
+.tasks{
+    margin-bottom: 2vw;
+}
+
+.edit , .delete{
+    padding: 0.3vw 0.5vw;
+    margin-left: 0.5vw;
+    border-radius: 4px;
+}
+.edit{
+    background-color: rgb(4, 231, 84);
+    color: white;
+}
+.delete{
+    background-color: red;
+    color: white;
+}
+button{
+    border: none;
+    background: none;
+    box-shadow: 2px 2px 5px black;
+}
+@media (max-width:698px) {
+    .container{
+        width: 75%;
+        margin-top: 30vh;
+    }
+    .tasks{
+        width: 80%;
+    }
+    .add:bu{
+        font-size: 10px;
+    }
+    .tasks{
+        margin-bottom: 2vw;
+    }
+    .add{
+        padding: 1vw 1.5vw;
+    }
+   .edit , .delete{
+    padding: 1vw 1vw;
+   }
+}
